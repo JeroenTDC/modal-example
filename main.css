@@ -19,6 +19,26 @@ body {
   font-size: 1.4rem;
 }
 
+.modal {
+  display: none;
+  position: absolute;
+  width: 70%;
+  background-color: #ffffff;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+#modalClose {
+  float: right;
+}
+#modalContent {
+  padding: 2rem;
+}
+.show {
+  display: block;
+}
+
 ul {
   font-family: helvetica;
 }
