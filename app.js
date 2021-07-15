@@ -23,7 +23,7 @@ const listItems = [
 
 const modalClose = document.getElementById("modalClose");
 modalClose.addEventListener("click", function () {
-  document.getElementById("selected-article").classList.toggle("show");
+  document.getElementById("selected-article").classList.remove("show");
 });
 
 function modalShow(elementID) {
@@ -32,7 +32,7 @@ function modalShow(elementID) {
   const articleClone = document.querySelector("#articles").childNodes[artId];
   console.log(articleClone);
   articleSelected.appendChild(articleClone.cloneNode(true));
-  document.getElementById("selected-article").classList.toggle("show");
+  document.getElementById("selected-article").classList.add("show");
 }
 
 function addElement(el) {
